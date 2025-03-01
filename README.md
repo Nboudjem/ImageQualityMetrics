@@ -70,6 +70,16 @@ The following image quality metrics are implemented in this repository:
 
 To use these metrics, simply pass two images (or an image and its reference) to the respective functions. The metrics will return a score indicating the quality of the image.
 
+## **Dependencies**
+numpy
+opencv-python
+scikit-image
+matplotlib
+scipy
+
+## **Contributing** 
+Feel free to contribute to this repository by submitting pull requests. You can add more image quality metrics or improve the current implementations.
+
 ### Example:
 ```python
 import cv2
@@ -90,3 +100,4 @@ mse_value = mse(image1, image2)
 print(f"PSNR: {psnr_value} dB")
 print(f"SSIM: {ssim_value}")
 print(f"MSE: {mse_value}")
+
