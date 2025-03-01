@@ -2,6 +2,10 @@
 
 This repository provides implementations of several image quality metrics used in image processing and computer vision. These metrics are crucial for evaluating the performance of imaging systems and assessing image quality objectively. They are commonly used in areas like medical imaging, image compression, denoising, and photography.
 
+The metrics are written separately in different Python files, but are also gathered as a class in the file ImageQualityClass.py, which can be run under the file Main.py.
+
+Let me know if you need further adjustments!
+
 ## **Image Quality Metrics Implemented**
 
 The following image quality metrics are implemented in this repository:
