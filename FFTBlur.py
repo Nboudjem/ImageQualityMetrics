@@ -2,6 +2,13 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''
+The Fourier Transform helps analyze frequency components of an image:
+
+Sharp images → High-frequency components present.
+Blurry images → High frequencies are suppressed.
+'''
+
 
 def detect_blur_fft(image_path, threshold=10):
     # Load the image in grayscale

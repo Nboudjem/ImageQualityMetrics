@@ -1,6 +1,9 @@
 import numpy as np
 from PIL import Image
 
+'''
+CNR Calculation: The CNR is computed using the formula mentioned above. A higher CNR indicates better contrast relative to the noise in the image.
+'''
 
 # Function to calculate Contrast-to-Noise Ratio (CNR)
 def cnr(image, signal_mask, background_mask):
@@ -23,11 +26,12 @@ def cnr(image, signal_mask, background_mask):
 
 
 # Load the image
-image = Image.open('image.png')  # Replace with the path to your image
+image = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
 
 # Create a simple mask for signal (foreground) and background regions
 # For example, assume the foreground is a region of interest in the center of the image
-height, width = np.array(image).shape
+#TODO: code to be fixed here! the shape should be 2D instead of 3D
+height, width, _ = np.array(image).shape
 signal_mask = np.zeros((height, width), dtype=bool)
 background_mask = np.ones((height, width), dtype=bool)
 

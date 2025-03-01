@@ -1,7 +1,9 @@
 import numpy as np
 from PIL import Image
 
-
+'''
+The MSE value will be printed. A lower MSE value indicates that the images are more similar. If the MSE is zero, the images are identical.
+'''
 # Function to calculate Mean Squared Error (MSE)
 def mse(image1, image2):
     # Convert images to numpy arrays
@@ -15,8 +17,8 @@ def mse(image1, image2):
 
 
 # Load images
-image1 = Image.open('image1.png')  # Replace with the path to your first image
-image2 = Image.open('image2.png')  # Replace with the path to your second image
+image1 = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
+image2 = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
 
 # Ensure both images have the same size
 if image1.size != image2.size:

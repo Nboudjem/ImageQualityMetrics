@@ -2,6 +2,11 @@ import numpy as np
 from skimage.metrics import structural_similarity as ssim
 from PIL import Image
 
+'''
+The SSIM value is printed, where:
+1.0 means the images are identical.
+0.0 or less indicates that the images are very different in structure.
+'''
 
 # Function to calculate SSIM
 def calculate_ssim(image1, image2):
@@ -15,8 +20,8 @@ def calculate_ssim(image1, image2):
 
 
 # Load images
-image1 = Image.open('image1.png')  # Replace with the path to your first image
-image2 = Image.open('image2.png')  # Replace with the path to your second image
+image1 = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
+image2 = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
 
 # Ensure both images are in the same size
 if image1.size != image2.size:

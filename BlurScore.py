@@ -1,6 +1,9 @@
 import cv2
 import numpy as np
 
+'''
+A higher variance means a sharper image, while a lower variance indicates a blurry image.
+'''
 
 # Function to calculate blur score using Variance of Laplacian
 def detect_blur(image_path, threshold=100):
@@ -21,4 +24,9 @@ def detect_blur(image_path, threshold=100):
 
     return blur_score, is_blurry
 
+# Example usage
+image_path = "C:/Users/User/Desktop/ImageQuality/chest.jpg"  # Replace with your image path
+blur_score, is_blurry = detect_blur(image_path)
 
+print(f"Blur Score: {blur_score:.2f}")
+print("Blurry Image: Yes" if is_blurry else "Blurry Image: No")

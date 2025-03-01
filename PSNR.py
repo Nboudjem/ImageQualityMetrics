@@ -1,6 +1,10 @@
 import numpy as np
 from PIL import Image
 
+'''
+Result: The PSNR value will be printed in decibels (dB). A higher PSNR indicates that the images are more similar, and the quality is better.
+'''
+
 
 # Function to calculate Mean Squared Error (MSE)
 def mse(image1, image2):
@@ -28,8 +32,8 @@ def psnr(image1, image2):
 
 
 # Load images
-image1 = Image.open('image1.png')  # Replace with the path to your image
-image2 = Image.open('image2.png')  # Replace with the path to your image
+image1 = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
+image2 = Image.open('C:/Users/User/Desktop/ImageQuality/chest.jpg')  # Replace with the path to your image
 
 # Ensure both images are in the same mode and size
 if image1.size != image2.size:

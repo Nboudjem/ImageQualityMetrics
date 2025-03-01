@@ -3,6 +3,13 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+'''
+The Wavelet Transform decomposes an image into different frequency bands:
+
+Sharp images → High-frequency details preserved.
+Blurry images → High frequencies significantly reduced.
+'''
+
 
 def detect_blur_wavelet(image_path, threshold=0.002):
     # Load image in grayscale
@@ -49,7 +56,6 @@ print(f"Wavelet Blur Score: {blur_score:.6f}")
 print("Blurry Image: Yes" if is_blurry else "Blurry Image: No")
 
 """
-
 Method	                        Strengths	                        Limitations
 Laplacian Variance	            Fast and simple	                    Sensitive to noise
 FFT-Based Blur Detection	    Robust for detecting motion blur	Sensitive to image size variations
